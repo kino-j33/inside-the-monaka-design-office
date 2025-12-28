@@ -1,0 +1,534 @@
+@charset "utf-8";
+/* PC
+@media screen and (min-width:1024px) {}
+
+タブレット
+@media screen and (min-width:768px) {}
+*/
+
+/*=======================
+  タブレット
+=======================*/
+@media screen and (min-width:768px) {
+	/* list
+	-----------------------*/
+	.list01--1 > .item {
+		font-size: 14px;
+		line-height: 5;
+	}
+
+	/* text
+	-----------------------*/
+	.text01--3 {
+		font-size: 14px;
+		line-height: 2;
+	}
+
+	/* bg--color
+  -----------------------*/
+	.spBg--black--gradient {
+		background: none;
+	}
+
+	/*=======================
+		header
+	=======================*/
+	.header {
+		grid-template: "..... squ01 squ02 ..... ..... ....." 10px
+		"..... squ01 squ02 ..... ..... name " 80px
+		"logo  squ01 squ02 ..... ..... ....." 20px
+		"logo  ..... ..... ..... ..... ....." 1fr
+		"..... ..... ..... text  text  text"
+		"..... ..... ..... ..... ..... ....." 1fr
+		"..... ..... ..... news  news  news "
+		/16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+		width: 100%;
+		height: 100vh;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .4), rgba(111, 111, 111, .4) 1px,transparent 1px, transparent 16.666%), transparent;
+	}
+	.logoWrap {
+		margin: 0 auto;
+	}
+
+
+	/*=======================
+		MV
+	=======================*/
+	.mvWrap {
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+	.topMv--video {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* preNextAnimation
+	-----------------------*/
+	.mvHeading {
+		font-size: 6.834vw;
+	}
+	.companyName {
+		letter-spacing: 1.8px;
+	}
+	.mvText {
+		font-size: 15px;
+		letter-spacing: 1.2px;
+	}
+	.newsWrap {
+		grid-template: "..... ..... ..... ..... ..... ..... scrol" 20px
+		"..... text  ..... conte conte ..... scrol"
+		"..... ..... ..... ..... ..... ..... scrol" 20px
+		/ 36px auto 36px 1fr 1fr 20px 108px;
+		grid-area: news;
+	}
+	.scrollWrap {
+		top: 0;
+		width: 108px;
+		height: 108px;
+	}
+	/*=======================
+		main
+	=======================*/
+	.main01 {
+		width: 100%;
+		/* background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .4), rgba(111, 111, 111, .4) 1px, transparent 1px, transparent 16.666%), #f3f3f3; */
+	}
+
+	/*=======================
+    contents
+  =======================*/
+	/* imgLeft_textRight
+  -----------------------*/
+	.contentWrap {
+		width: 100%;
+		padding-bottom: 200px;
+	}
+	.contentWrap.one {
+		position: relative;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), linear-gradient(#333333 50%, #f3f3f3 50%);
+	}
+	.contentWrap.one {
+		position: relative;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), linear-gradient(#333333 50%, #f3f3f3 50%);
+	}
+	.contentWrap.one::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: calc(16.666% - 1px);
+		height: 50%;
+		background: #ffffff;
+	}
+	.contentWrap.two {
+		position: relative;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), #f3f3f3;
+	}
+	.contentWrap.two::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: calc(16.666% - 1px);
+		height: 50%;
+		background: #ffffff;
+	}
+	.contentWrap.three {
+		position: relative;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), #f3f3f3;
+	}
+	.contentWrap.three::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 33.332%;
+		height: 50%;
+		background: #ffffff;
+	}
+	.contentWrap.three > .imgWrap::before {
+		content: "";
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+		display: block;
+		width: 33.333%;
+		height: 50%;
+		background: #4bcba7;
+	}
+	.contentWrap.four {
+		position: relative;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), #ffffff;
+	}
+	.contentWrap > .textWrap .headding02--01 {
+		font-size: 3.461vw;
+		line-height: 1;
+		letter-spacing: 5.7px;
+	}
+	.contentWrap > .textWrap .headding02--01 + .text01--1 {
+		margin-top: 100px;
+	}
+	.contentWrap > .textWrap .text01--1 {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 2.3;
+	}
+	.headding02--02 {
+		font-size: 14px;
+	}
+	.contentWrap.five {
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), #f3f3f3;
+	}
+	.contentWrap.six {
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), #f3f3f3;
+	}
+
+	/* imgLeft_textRight
+  -----------------------*/
+	.imgLeft_textRight {
+		display: flex;
+		align-items: flex-end;
+	}
+	.imgLeft_textRight > .imgWrap {
+		width: 49.98%;
+	}
+	.imgLeft_textRight > .textWrap {
+		width: 49.98%;
+		margin: 0 0 80px;
+		padding: 150px 130px 240px 165px;
+	}
+
+	/* imgAll_textLeft
+  -----------------------*/
+	.imgAll_textLeft {
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+	.imgAll_textLeft > .imgWrap {
+		width: 49.98%;
+	}
+	.imgAll_textLeft > .textWrap {
+		width: 49.98%;
+		margin: 0;
+		padding: 150px 130px 240px 165px;
+	}
+
+	/* imgAll_textRight
+  -----------------------*/
+	.imgAll_textRight {
+		display: flex;
+		align-items: flex-start;
+	}
+	.imgAll_textRight > .imgWrap {
+		width: 49.98%;
+	}
+	.imgAll_textRight > .textWrap {
+		width: 49.98%;
+		margin: 110px 0 0;
+		padding: 150px 130px 240px 165px;
+	}
+
+	/* serviceWrap
+  -----------------------*/
+	.serviceWrap {
+		display: grid;
+		grid-template: "..... ..... ..... ..... ..... ....." 120px
+		"..... title text  ..... ..... ....."
+		"..... ..... ..... ..... ..... ....." 120px
+		"..... conte conte conte conte conte"
+		/16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+		width: 100%;
+		padding: 0 0 200px;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .4), rgba(111, 111, 111, .4) 1px,transparent 1px, transparent 16.666%), #333333;
+	}
+	.serviceWrap > .headding02--03 {
+		grid-area: title;
+		font-size: 16px;
+	}
+	.serviceWrap > .text01--2 {
+		grid-area: text;
+	}
+	.serviceListWrap {
+		grid-template: "title01   content" 33.333%
+		"title02   content" 33.333%
+		"title03   content" 33.333%
+		/1fr 4fr;
+		grid-area: conte;
+		min-height: 75vh;
+	}
+	.serviceListWrap .serviceListContentsWrap:nth-of-type(1) {
+		grid-area: content;
+	}
+	.serviceListWrap .serviceListContentsWrap:nth-of-type(2) {
+		grid-area: content;
+	}
+	.serviceListWrap .serviceListContentsWrap:nth-of-type(3) {
+		grid-area: content;
+	}
+	.serviceListTitle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		line-height: 1.75;
+		letter-spacing: 1.12px;
+	}
+	.serviceListTitle::before,
+	.serviceListTitle::after {
+		content: none;
+		display: none;
+	}
+	.serviceWrap > .serviceListWrap > .serviceListContentsWrap {
+		width: 100%;
+		padding-top: 0;
+		padding-right: 37%;
+	}
+	.serviceListContentsWrap.one {
+		background-position: left center;
+		background-size: cover;
+	}
+	.serviceListContentsWrap.two {
+		background-position: left center;
+		background-size: cover;
+	}
+	.serviceListContentsWrap.three {
+		background-position: left center;
+		background-size: cover;
+	}
+
+	.serviceListContents > .title {
+		font-size: 32px;
+		line-height: 2;
+	}
+
+	/*=======================
+		footer
+	=======================*/
+	.footerHeading01--1 + .footerCompanyList {
+		margin-top: 30px;
+	}
+	.footerWrap {
+		grid-template: "logo    ....... ....... ....... ....... ......." 2fr
+		"....... company company ....... contact ......."
+		"....... company company ....... contact ......."
+		"....... ....... ....... ....... ....... ......." 200px
+		"....... copy    copy    copy    copy    ......."
+		"....... ....... ....... ....... ....... ......." 1fr
+		/1fr 1fr 1fr 1fr 1fr 1fr;
+		background: repeating-linear-gradient(90deg, rgba(111, 111, 111, .2), rgba(111, 111, 111, .2) 1px, transparent 1px, transparent 16.666%), rgba(0,0,0,.75);
+	}
+	.fotterLogoWrap {
+		display: flex;
+		grid-area: logo;
+		align-items: center;
+		justify-content: center;
+	}
+	.footerHeading01--1 {
+		font-size: 16px;
+	}
+	.footerHeading01--1 + .btnWrap {
+		margin-top: 30px;
+	}
+	.btnWrap + .telWrap {
+		margin-top: 20px;
+	}
+	.footerCompanyList + .footerCompanyList {
+		margin-top: 40px;
+	}
+	.footerCompanyList > .title,
+	.footerCompanyList > .description {
+		font-size: 16px;
+	}
+	.copyright {
+		grid-area: copy;
+	}
+	.copyright > .item {
+		font-size: 13px;
+	}
+
+	/* js--active
+  -----------------------*/
+	.js--active + .serviceListContentsWrap {
+		height: 100%;
+	}
+
+	.serviceListContents {
+		padding: 180px 100px 100px;
+	}
+
+	/* square
+  -----------------------*/
+	.square01,
+	.square02 {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.square01 {
+		grid-area: squ01;
+	}
+	.square02 {
+		grid-area: squ02;
+	}
+	.square03,
+	.square04,
+	.square05,
+	.square06,
+	.square07 {
+		position: absolute;
+		display: block;
+		width: calc(100% / 3);
+		overflow: hidden;
+	}
+	.square03 {
+		top: 0;
+		left: 0;
+		height: 50%;
+	}
+	.square04 {
+		right: 33.33%;
+		bottom: 0;
+		height: 25%;
+	}
+	.square05 {
+		right: 0;
+		bottom: 25%;
+		height: 25%;
+	}
+	.square06 {
+		bottom: 0;
+		left: 0;
+		height: 33.333%;
+	}
+	.square07 {
+		right: 0;
+		bottom: 0;
+		height: 40%;
+	}
+	.square03 > .square--inner,
+	.square04 > .square--inner,
+	.square07 > .square--inner {
+		background: #ffffff;
+	}
+	.square05 > .square--inner,
+	.square06 > .square--inner {
+		background: #4bcba7;
+	}
+	.square--inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* animation
+	-----------------------*/
+	.js--toRight {
+		left: -100%;
+	}
+	.square--top.js--active > .js--toRight {
+		animation: toRight .5s forwards;
+		animation-delay: 1.8s;
+	}
+	.js--active > .js--toRight {
+		animation: toRight .5s forwards;
+	}
+	.js--toBottom {
+		top: -100%;
+	}
+	.js--active > .js--toBottom {
+		animation: toBottom .75s forwards;
+	}
+
+	@keyframes toRight {
+		0% {
+			left: -100%;
+			background: #4bcba7;
+		}
+		100% {
+			left: 0;
+			background: #4bcba7;
+		}
+	}
+	@keyframes toBottom {
+		0% {
+			top: -100%;
+		}
+		100% {
+			top: 0;
+		}
+	}
+
+
+	/* imgMsk
+  -----------------------*/
+	.imgMsk {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.imgMsk > .imgMsk--item {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		background: #4bcba7;
+	}
+	.imgMsk > .imgMsk--item {
+		width: 33.33%;
+	}
+	.imgMsk--item01 {
+		left: 0;
+	}
+	.imgMsk--item02 {
+		left: 33.33%;
+	}
+	.imgMsk--item03 {
+		left: 66.66%;
+	}
+	.js--active > .imgMsk--item01 {
+		animation: fadeoutToBottom .75s forwards;
+	}
+	.js--active > .imgMsk--item02 {
+		animation: fadeoutToBottom .75s forwards;
+		animation-delay: .2s;
+	}
+	.js--active > .imgMsk--item03 {
+		animation: fadeoutToBottom .75s forwards;
+		animation-delay: .4s;
+	}
+
+	/* animation
+	-----------------------*/
+	@keyframes fadeoutToBottom {
+		0% {
+			top: 0;
+		}
+		75% {
+			top: 80%;
+		}
+		85% {
+			top: 90%;
+		}
+		90% {
+			top: 95%;
+		}
+		100% {
+			top: 100%;
+		}
+	}
+}
